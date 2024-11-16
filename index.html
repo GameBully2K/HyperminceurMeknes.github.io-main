@@ -1,266 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Character Encoding -->
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
-  <link rel="icon" href="assets/letter-h.png" type="image/png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Hyperminceur Meknès</title>
-  
+    <!-- Primary Meta Tags -->
+    <meta
+      name="title"
+      content="Hyperminceur Meknès - Programme CureElite pour la Ménopause"
+    />
+    <meta
+      name="description"
+      content="Découvrez notre programme CureElite, une approche naturelle et équilibrée pour gérer la ménopause. Experts en transformation et bien-être à Meknès."
+    />
 
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hyperminceur.meknes.ma/" />
+    <meta
+      property="og:title"
+      content="Hyperminceur Meknès - Programme CureElite pour la Ménopause"
+    />
+    <meta
+      property="og:description"
+      content="Découvrez notre programme CureElite, une approche naturelle et équilibrée pour gérer la ménopause. Experts en transformation et bien-être à Meknès."
+    />
+    <meta property="og:image" content="assets/Hyperminceur-Logo.png" />
 
-  <link rel="icon" href="./assets/favicon.ico.jpg" type="image/x-icon">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Hyperminceur Meknès - Programme CureElite pour la Ménopause"
+    />
+    <meta
+      name="twitter:description"
+      content="Découvrez notre programme CureElite, une approche naturelle et équilibrée pour gérer la ménopause. Experts en transformation et bien-être à Meknès."
+    />
+    <meta name="twitter:image" content="assets/Hyperminceur-Logo.png" />
 
- 
-</head>
+    <!-- Additional SEO Meta Tags -->
+    <meta
+      name="keywords"
+      content="ménopause, bien-être, Meknès, CureElite, transformation naturelle, santé femme, Hyperminceur"
+    />
+    <meta name="author" content="Hyperminceur Meknès" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://hyperminceur.meknes.ma/" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link rel="icon" href="assets/letter-h.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
 
-<body>
-  <nav>
-    <div class="nav__header">
-      <div class="nav__logo">
-        <a href="#">
-          <img src="assets/Hyperminceur-Logo.png" alt="logo"  /> 
-        </a>
+    <title>Hyperminceur Meknès</title>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <link rel="icon" href="./assets/favicon.ico.jpg" type="image/x-icon" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">
+            <img src="assets/Hyperminceur-Logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
       </div>
-      <div class="nav__menu__btn" id="menu-btn">
-        <i class="ri-menu-line"></i>
-      </div>
-    </div>
-    <ul class="nav__links" id="nav-links">
-      <li><a href="#">À propos</a></li>
-      <li><a href="#">CureElite</a></li>
-      <li><a href="#">Avis</a></li>
-      <li><a href="#">Contact</a></li>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#">À propos</a></li>
+        <li><a href="#">CureElite</a></li>
+        <li><a href="#">Avis</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
 
-    </ul>
-  </nav>
-
-  <div id="videoContainer">
-    <video id="introVideo" autoplay muted loop>
-        <source src="./assets/video11.mp4" type="video/mp4">
+    <div id="videoContainer">
+      <video id="introVideo" autoplay muted loop>
+        <source src="./assets/video11.mp4" type="video/mp4" />
         Votre navigateur ne prend pas en charge la vidéo.
-    </video>
-    <button id="soundToggle">
-        <svg class="sound-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                <g transform="scale(5.12,5.12)">
-                    <path d="M26.1875,2.96875c-0.3125,0.00391 -0.63281,0.05859 -0.9375,0.15625c-0.59375,0.19141 -1.16406,0.55078 -1.65625,1.0625c-0.01172,0.01172 -0.01953,0.01953 -0.03125,0.03125l-11.875,11.78125h-6.6875c-1.64453,0 -3,1.35547 -3,3v12c0,1.64453 1.35547,3 3,3h6.8125l11.6875,11.71875c1.12891,1.12891 2.57031,1.58984 3.75,1.03125c1.17969,-0.55859 1.75,-1.89453 1.75,-3.4375v-37c0,-1.49219 -0.73437,-2.76172 -1.90625,-3.1875c-0.29297,-0.10547 -0.59375,-0.16016 -0.90625,-0.15625zM26.15625,4.96875c0.09375,0 0.17969,0.00781 0.25,0.03125c0.27734,0.10156 0.59375,0.40234 0.59375,1.3125v37c0,1.05469 -0.37891,1.50781 -0.625,1.625c-0.24609,0.11719 -0.69922,0.11328 -1.46875,-0.65625l-12.59375,-12.59375c0.01563,0.01563 -0.3125,-0.58594 -0.3125,-1v-11.5c0,-0.13281 0.04688,-0.40234 0.125,-0.625c0.07813,-0.22266 0.23438,-0.39062 0.1875,-0.34375l12.6875,-12.59375c0.01172,-0.01172 0.01953,-0.01953 0.03125,-0.03125c0.45313,-0.48047 0.83984,-0.62109 1.125,-0.625zM31,8v2c8.25391,0 15,6.74609 15,15c0,8.25391 -6.74609,15 -15,15v2c9.34375,0 17,-7.65625 17,-17c0,-9.34375 -7.65625,-17 -17,-17zM31,14v2c4.95313,0 9,4.04688 9,9c0,4.95313 -4.04687,9 -9,9v2c6.04688,0 11,-4.95312 11,-11c0,-6.04687 -4.95312,-11 -11,-11zM5,18h5.21875c-0.12891,0.375 -0.21875,0.75781 -0.21875,1.1875v11.5c0,0.48047 0.07422,0.91797 0.21875,1.3125h-5.21875c-0.55469,0 -1,-0.44531 -1,-1v-12c0,-0.55469 0.44531,-1 1,-1zM31,20v2c1.65625,0 3,1.34375 3,3c0,1.65625 -1.34375,3 -3,3v2c2.74609,0 5,-2.25391 5,-5c0,-2.74609 -2.25391,-5 -5,-5z"></path>
-                </g>
+      </video>
+      <button id="soundToggle">
+        <svg
+          class="sound-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 256 256"
+        >
+          <g
+            fill="#ffffff"
+            fill-rule="nonzero"
+            stroke="none"
+            stroke-width="1"
+            stroke-linecap="butt"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            stroke-dasharray=""
+            stroke-dashoffset="0"
+            font-family="none"
+            font-weight="none"
+            font-size="none"
+            text-anchor="none"
+            style="mix-blend-mode: normal"
+          >
+            <g transform="scale(5.12,5.12)">
+              <path
+                d="M26.1875,2.96875c-0.3125,0.00391 -0.63281,0.05859 -0.9375,0.15625c-0.59375,0.19141 -1.16406,0.55078 -1.65625,1.0625c-0.01172,0.01172 -0.01953,0.01953 -0.03125,0.03125l-11.875,11.78125h-6.6875c-1.64453,0 -3,1.35547 -3,3v12c0,1.64453 1.35547,3 3,3h6.8125l11.6875,11.71875c1.12891,1.12891 2.57031,1.58984 3.75,1.03125c1.17969,-0.55859 1.75,-1.89453 1.75,-3.4375v-37c0,-1.49219 -0.73437,-2.76172 -1.90625,-3.1875c-0.29297,-0.10547 -0.59375,-0.16016 -0.90625,-0.15625zM26.15625,4.96875c0.09375,0 0.17969,0.00781 0.25,0.03125c0.27734,0.10156 0.59375,0.40234 0.59375,1.3125v37c0,1.05469 -0.37891,1.50781 -0.625,1.625c-0.24609,0.11719 -0.69922,0.11328 -1.46875,-0.65625l-12.59375,-12.59375c0.01563,0.01563 -0.3125,-0.58594 -0.3125,-1v-11.5c0,-0.13281 0.04688,-0.40234 0.125,-0.625c0.07813,-0.22266 0.23438,-0.39062 0.1875,-0.34375l12.6875,-12.59375c0.01172,-0.01172 0.01953,-0.01953 0.03125,-0.03125c0.45313,-0.48047 0.83984,-0.62109 1.125,-0.625zM31,8v2c8.25391,0 15,6.74609 15,15c0,8.25391 -6.74609,15 -15,15v2c9.34375,0 17,-7.65625 17,-17c0,-9.34375 -7.65625,-17 -17,-17zM31,14v2c4.95313,0 9,4.04688 9,9c0,4.95313 -4.04687,9 -9,9v2c6.04688,0 11,-4.95312 11,-11c0,-6.04687 -4.95312,-11 -11,-11zM5,18h5.21875c-0.12891,0.375 -0.21875,0.75781 -0.21875,1.1875v11.5c0,0.48047 0.07422,0.91797 0.21875,1.3125h-5.21875c-0.55469,0 -1,-0.44531 -1,-1v-12c0,-0.55469 0.44531,-1 1,-1zM31,20v2c1.65625,0 3,1.34375 3,3c0,1.65625 -1.34375,3 -3,3v2c2.74609,0 5,-2.25391 5,-5c0,-2.74609 -2.25391,-5 -5,-5z"
+              ></path>
             </g>
+          </g>
         </svg>
         <span>Activer le son</span>
-    </button>
-</div>
-
-
-
-  <header class="header-container">
-    <div class="banner-container">
-      <img src="assets/Hyperminceur-Post-15-4.jpg" alt="Beauty Treatment Banner" class="banner-image">
-      <img src="assets/Banner-pc (1).jpeg" alt="Beauty Treatment Banner" class="banner-image2">
+      </button>
     </div>
-    <div class="beauty-treatment-hero">
-      <div class="hero-intro">
-        <h1 class="business-name">Vivre la Ménopause en Toute Sérénité avec la CureElite</h1>
-        <p class="tagline">Inscrivez vous maintenant pour une transformation naturelle et
-          équilibrée pendant la ménopause</p>
+
+    <header class="header-container">
+      <div class="banner-container">
+        <img
+          src="assets/Hyperminceur-Post-15-4.jpg"
+          alt="Beauty Treatment Banner"
+          class="banner-image"
+        />
+        <img
+          src="assets/Banner-pc (1).jpeg"
+          alt="Beauty Treatment Banner"
+          class="banner-image2"
+        />
       </div>
-      <div class="registration-form-container">
-        <form id="form">
-          <div class="formlayout">
-            <input type="text" placeholder="Nom complet / الاسم الكامل" name="name" id="name" class="form-input" required>
-            <input type="email" placeholder="Email / البريد الإلكتروني" name="email" id="email" class="form-input" required>
-            <input type="tel" placeholder="Numéro de téléphone / رقم الهاتف" name="phone" id="phone" class="form-input" required>
-            <input type="text" placeholder="Ville / المدينة" name="city" id="city" class="form-input" required>
-            <input type="number" placeholder="Âge / العمر" name="age" id="age" class="form-input" required>
+      <div class="beauty-treatment-hero" id="formSection">
+        <div class="hero-intro">
+          <h1 class="business-name">
+            Vivre la Ménopause en Toute Sérénité avec la CureElite
+          </h1>
+          <p class="tagline">
+            Inscrivez vous maintenant pour une transformation naturelle et
+            équilibrée avant, pendant et après la ménopause
+          </p>
+        </div>
+        <div class="registration-form-container">
+          <form id="form">
+            <div class="formlayout">
+              <input
+                type="text"
+                placeholder="Nom complet / الاسم الكامل"
+                name="name"
+                id="name"
+                class="form-input"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email / البريد الإلكتروني"
+                name="email"
+                id="email"
+                class="form-input"
+                required
+              />
+              <input
+                type="tel"
+                placeholder="Numéro de téléphone / رقم الهاتف"
+                name="phone"
+                id="phone"
+                class="form-input"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Ville / المدينة"
+                name="city"
+                id="city"
+                class="form-input"
+                required
+              />
+              <input
+                type="number"
+                placeholder="Âge / العمر"
+                name="age"
+                id="age"
+                class="form-input"
+                required
+              />
+            </div>
+            <div class="buttonsub">
+              <button class="submit-button" type="submit">
+                <span class="fr">Commencez Votre Transformation Maintenant</span
+                ><br /><br />
+                <span class="ar">ابدأوا تغيير حياتكم الآن</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <section class="program-presentation">
+      <div class="container">
+        <img
+          src="assets/section1.jpeg"
+          alt="Programme Cure Elite"
+          class="program-image"
+        />
+        <img
+          src="assets/section1-pc.jpeg"
+          alt="Programme Cure Elite"
+          class="program-image2"
+        />
+
+        <div class="diagonal-section">
+          <div class="program-info">
+            <h2 class="program-title">
+              Présentation du Programme de La Cure Elite
+            </h2>
+            <div class="french-description">
+              <p>
+                La CureElite est conçue pour les femmes en préménopause et
+                ménopause afin d’apaiser les symptômes tels que les bouffées de
+                chaleur, les troubles du sommeil et les sautes d’humeur. Notre
+                approche intégrative combine nutrition, techniques relaxantes et
+                boost d'énergie pour vous offrir un bien-être total.
+              </p>
+            </div>
           </div>
-          <div class="buttonsub">
-            <button class="submit-button" type="submit">
-              <span class="fr">Commencez Votre Transformation Maintenant</span><br><br>
-              <span class="ar">ابدأوا تغيير حياتكم الآن</span>
-            </button>
+        </div>
+      </div>
+    </section>
+    <section class="why-choose-us">
+      <div class="container2">
+        <h2 class="section-title fr">
+          Pourquoi des Centaines de Femmes Choisissent La CureElite ?
+        </h2>
+        <div class="reasons">
+          <div class="reason">
+            <i class="fas fa-chart-line"></i>
+            <h3 class="reason-title fr">
+              Obtenez des Résultats Rapides et Naturels : Améliorez votre
+              bien-être en quelques semaines seulement.
+            </h3>
           </div>
-        </form>
-      </div>
-    </div>
-  </header>
-  <section class="program-presentation">
-    <div class="container">
-      <img src="assets/section1.jpeg" alt="Programme Cure Elite" class="program-image">
-      <img src="assets/section1-pc.jpeg" alt="Programme Cure Elite" class="program-image2">
-
-      <div class="diagonal-section">
-      <div class="program-info">
-        <h2 class="program-title">Présentation du Programme de La Cure Elite</h2>
-        <div class="french-description">
-          <p> La CureElite est conçue pour les femmes en préménopause et
-            ménopause afin d’apaiser les symptômes tels que les bouffées
-            de chaleur, les troubles du sommeil et les sautes d’humeur.
-            Notre approche intégrative combine soins, nutrition et
-            techniques relaxantes pour vous offrir un bien-être total.
-           </p>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section class="why-choose-us">
-    <div class="container2">
-      <h2 class="section-title fr"> Pourquoi des Centaines de Femmes Choisissent La CureElite ?</h2>
-      <div class="reasons">
-        <div class="reason">
-          <i class="fas fa-chart-line"></i>
-          <h3 class="reason-title fr">Obtenez des Résultats Rapides et Naturels : Améliorez votre bien-être en quelques semaines
-            seulement.</h3>
-        </div>
-        <div class="reason">
-          <i class="fas fa-users"></i>
-          <h3 class="reason-title fr">Bénéficiez d'un Soutien Professionnel : Notre équipe d'experts en santé féminine vous
-            accompagne de manière personnalisée.</h3>
-        </div>
-        <div class="reason">
-          <i class="fas fa-star"></i>
-          <h3 class="reason-title fr">Profitez d'une Solution Complète : Traitez naturellement pour apaiser les symptômes, rééquilibrer
-            les hormones, et améliorer votre qualité de vie.</h3>
-        </div>
-       
-      </div>
-      
-    </div>
-    <div class="buttonsub">
-      <a href="#form" class="submit-button">
-        <span class="fr">Je veux commencer maintenant</span>
-      </a>
-    </div>
-  </section>
-  <section class="testimonials">
-    <h2 class="section-title">Témoignages de Nos Clientes</h2>
-
-    <div class="container3">
-      <div class="testimonial-video">
-        <video width="100%" height="100%" controls>
-          <source src="assets/VID-20240930-WA0059.mp4" type="video/mp4">
-          Votre navigateur ne prend pas en charge la vidéo.
-        </video>
-      </div>
-      <div class="testimonial-container">
-      <div class="testimonials-slider">
-        <div class="testimonial">
-          <div class="testimonial-content">
-            <p class="testimonial-text fr">La CureElite a amélioré ma vie. Mes symptômes se sont apaisés, et je me sens beaucoup plus
-              calme et pleine d'énergie.</p>
-            <h3 class="testimonial-author fr">Amina, 52 ans</h3>
+          <div class="reason">
+            <i class="fas fa-users"></i>
+            <h3 class="reason-title fr">
+              Bénéficiez d'un Soutien Professionnel : Notre équipe d'experts en
+              santé féminine vous accompagne de manière personnalisée.
+            </h3>
+          </div>
+          <div class="reason">
+            <i class="fas fa-star"></i>
+            <h3 class="reason-title fr">
+              Profitez d'une Solution Complète : Traitez naturellement pour
+              apaiser les symptômes, rééquilibrer les hormones, et améliorer
+              votre qualité de vie.
+            </h3>
           </div>
         </div>
-        <div class="testimonial">
-          <div class="testimonial-content">
-            <p class="testimonial-text fr"> J'ai essayé plusieurs traitements, mais c'est la CureElite qui a fait la différence. Je recommande
-              fortement.</p>
-            <h3 class="testimonial-author fr">Fatima, 49 ans</h3>
+      </div>
+      <div class="buttonsub">
+        <a href="#formSection" class="submit-button">
+          <span class="fr">Je veux commencer maintenant</span>
+        </a>
+      </div>
+    </section>
+    <section class="testimonials">
+      <h2 class="section-title">Témoignages de Nos Clientes</h2>
+
+      <div class="container3">
+        <div class="testimonial-video">
+          <video width="100%" height="100%" controls>
+            <source src="assets/VID-20240930-WA0059.mp4" type="video/mp4" />
+            Votre navigateur ne prend pas en charge la vidéo.
+          </video>
+        </div>
+        <div class="testimonial-container">
+          <div class="testimonials-slider">
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <p class="testimonial-text fr">
+                  La CureElite a amélioré ma vie. Mes symptômes se sont apaisés,
+                  et je me sens beaucoup plus calme et pleine d'énergie.
+                </p>
+                <h3 class="testimonial-author fr">Amina, 52 ans</h3>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <p class="testimonial-text fr">
+                  J'ai essayé plusieurs traitements, mais c'est la CureElite qui
+                  a fait la différence. Je recommande fortement.
+                </p>
+                <h3 class="testimonial-author fr">Fatima, 49 ans</h3>
+              </div>
+            </div>
           </div>
         </div>
-      </div></div>
-    </div>
-    <div class="buttonsub">
-      <a href="#form" class="submit-button">
-        <span class="fr">Je Veux Commencer Maintenant</span>
-      </a>
-    </div>
-  </section>
-
-  <section class="benefits">
-    <h2>Comment la CureElite Peut Transformer Votre Vie</h2>
-    <div class="benefit-text">
-      <h3>Rééquilibrage Hormonal </h3>
-      <p> La CureElite aide à recalibrer vos hormones naturellement, réduisant les
-        effets secondaires désagréables de la ménopause.</p>
-    </div>
-    <div class="benefit-text">
-      <h3>Soulagement des Symptômes </h3>
-      <p> Surmontez les bouffées de chaleur, l'insomnie et les fluctuations émotionnelles.</p>
-    </div>
-    <div class="benefit-text">
-      <h3> Amélioration de la Qualité de Vie</h3>
-      <p> Retrouvez votre
-        énergie, votre bien-être et votre confiance.</p>
-    </div>
-    <div class="buttonsub">
-      <a href="#form" class="submit-button">
-        <span class="fr">Je Veux Commencer Maintenant</span>
-      </a>
-    </div>
-  </section>
-
-  <section class="faqs">
-    <h2>Questions Fréquemment Posées</h2>
-    <div class="faq-question">
-      <h4>À qui s'adresse la CureElite ?</h4>
-      <p>La CureElite est spécialement conçue pour les femmes en préménopause et ménopause.</p>
-      <span class="faq-icon">
-        <i class="fas fa-question-circle"></i>
-      </span>
-    </div>
-    <div class="faq-question">
-      <h4>Quels symptômes la CureElite aide-t-elle à soulager ?</h4>
-      <p>Elle aide à apaiser les bouffées de chaleur, les troubles du sommeil et les sautes d’humeur, ainsi qu'à
-        lutter contre la prise de poids et le stress émotionnel.</p>
-      <span class="faq-icon">
-        <i class="fas fa-question-circle"></i>
-      </span>
-    </div>
-    <div class="faq-question">
-      <h4>Quelle est l'approche utilisée dans la CureElite ?</h4>
-      <p> Nous utilisons une approche holistique et intégrative qui combine nutrition, techniques de relaxation,
-        et programmation mentale pour favoriser un équilibre complet.</p>
-      <span class="faq-icon">
-        <i class="fas fa-question-circle"></i>
-      </span>
-    </div>
-    <div class="faq-question">
-      <h4>Puis-je suivre des masterclasses dans toutes les villes pour apprendre à faire la cure ?</h4>
-      <p>Oui, il est possible de participer à des masterclasses organisées dans différentes villes pour
-        apprendre à appliquer la CureElite.</p>
-      <span class="faq-icon">
-        <i class="fas fa-question-circle"></i>
-      </span>
-    </div>
-  </section>
-  
-  <footer class="footer">
-    <div class="footer__container">
-      <p> Pour plus d'informations ou pour discuter de votre situation personnelle avec l'un de nos experts :
-      </p>
-      <p>Téléphone: <a href="tel:0535525042">0535525042</a> / <a href="tel:0663 639 181">0663 639 181</a></p>
-      <p>Suivez-nous sur les réseaux sociaux</p>
-
-      <div class="footer__socials">
-        <a href="https://www.instagram.com/hyperminceur.meknes.ma/?hl=fr"><i
-            class="ri-instagram-fill"></i></a>
-        <a href="mailto:menopause1ma@gmail.com" ><i class="ri-mail-fill"></i></a>
-        <a href="https://web.facebook.com/hyperminceur.meknes/?locale=fr_FR&_rdc=1&_rdr"><i
-          class="ri-facebook-fill"></i></a>
       </div>
-    </div>
-    <div >
-      <a href="https://nl-digitalagency.com/">&copy; 2024 Nl Marketing . All rights reserved.</a>
-    </div>
-  </footer>
+      <div class="buttonsub">
+        <a href="#formSection" class="submit-button">
+          <span class="fr">Je Veux Commencer Maintenant</span>
+        </a>
+      </div>
+    </section>
 
+    <section class="benefits">
+      <h2>Comment la CureElite Peut Transformer Votre Vie</h2>
+      <div class="benefit-text">
+        <h3>Rééquilibrage Hormonal</h3>
+        <p>
+          La CureElite aide à recalibrer vos hormones naturellement, réduisant
+          les effets secondaires désagréables de la ménopause.
+        </p>
+      </div>
+      <div class="benefit-text">
+        <h3>Soulagement des Symptômes</h3>
+        <p>
+          Surmontez les bouffées de chaleur, l'insomnie et les fluctuations
+          émotionnelles.
+        </p>
+      </div>
+      <div class="benefit-text">
+        <h3>Amélioration de la Qualité de Vie</h3>
+        <p>Retrouvez votre énergie, votre bien-être et votre confiance.</p>
+      </div>
+      <div class="buttonsub">
+        <a href="#formSection" class="submit-button">
+          <span class="fr">Je Veux Commencer Maintenant</span>
+        </a>
+      </div>
+    </section>
 
+    <section class="faqs">
+      <h2>Questions Fréquemment Posées</h2>
+      <div class="faq-question">
+        <h4>À qui s'adresse la CureElite ?</h4>
+        <p>
+          La CureElite est spécialement conçue pour les femmes en préménopause
+          et ménopause.
+        </p>
+        <span class="faq-icon">
+          <i class="fas fa-question-circle"></i>
+        </span>
+      </div>
+      <div class="faq-question">
+        <h4>Quels symptômes la CureElite aide-t-elle à soulager ?</h4>
+        <p>
+          Elle aide à apaiser les bouffées de chaleur, les troubles du sommeil
+          et les sautes d’humeur, ainsi qu'à lutter contre la prise de poids et
+          le stress émotionnel.
+        </p>
+        <span class="faq-icon">
+          <i class="fas fa-question-circle"></i>
+        </span>
+      </div>
+      <div class="faq-question">
+        <h4>Quelle est l'approche utilisée dans la CureElite ?</h4>
+        <p>
+          Nous utilisons une approche holistique et intégrative qui combine
+          nutrition, techniques de relaxation, et programmation mentale pour
+          favoriser un équilibre complet.
+        </p>
+        <span class="faq-icon">
+          <i class="fas fa-question-circle"></i>
+        </span>
+      </div>
+      <div class="faq-question">
+        <h4>
+          Puis-je suivre des masterclasses dans toutes les villes pour apprendre
+          à faire la cure ?
+        </h4>
+        <p>
+          Oui, il est possible de participer à des masterclasses organisées dans
+          différentes villes pour apprendre à appliquer la CureElite.
+        </p>
+        <span class="faq-icon">
+          <i class="fas fa-question-circle"></i>
+        </span>
+      </div>
+    </section>
 
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="main.js"></script>
-</body>
+    <footer class="footer">
+      <div class="footer__container">
+        <p>
+          Pour plus d'informations ou pour discuter de votre situation
+          personnelle avec l'un de nos experts :
+        </p>
+        <p>
+          Téléphone:
+          <a href="tel:0535525042">0535525042</a> /
+          <a href="tel:0663639181">0663639181</a>
+        </p>
+        <p>Suivez-nous sur les réseaux sociaux</p>
 
+        <div class="footer__socials">
+          <a href="https://www.instagram.com/hyperminceur.meknes.ma/?hl=fr"
+            ><i class="ri-instagram-fill"></i
+          ></a>
+          <a href="mailto:menopause1ma@gmail.com"
+            ><i class="ri-mail-fill"></i
+          ></a>
+          <a
+            href="https://web.facebook.com/hyperminceur.meknes/?locale=fr_FR&_rdc=1&_rdr"
+            ><i class="ri-facebook-fill"></i
+          ></a>
+        </div>
+      </div>
+      <div>
+        <a href="https://nl-digitalagency.com/"
+          >&copy; 2024 Nl Marketing . All rights reserved.</a
+        >
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
 </html>

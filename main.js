@@ -16,7 +16,7 @@ navLinks.addEventListener("click", (e) => {
 
 
 
-emailjs.init("MqPLlLlRK-l_MaV0y");
+emailjs.init("QqyFjr369B0Zr8Eu5");
 
 document.getElementById('form').addEventListener('submit', function(event) {
   event.preventDefault(); 
@@ -27,7 +27,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
   // Disable the button to prevent multiple submissions
   button.disabled = true;
  
- emailjs.sendForm('service_u66in2u', 'template_79i1sjg', form)
+ emailjs.sendForm('service_0qf787g', 'template_n6wwvx5', form)
     .then(function(response) {
       console.log('Success:', response);
      alert('Votre message a été envoyé avec succès!');
