@@ -27,15 +27,15 @@ html {
 }
 
 body {
-  font-family: 'Montserrat' ;
-    font-size: 18px;
-  
-  background-color:white;
+  font-family: "Montserrat";
+  font-size: 18px;
+
+  background-color: white;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   overflow-x: hidden;
- }
+}
 
 nav {
   position: fixed;
@@ -70,8 +70,6 @@ nav {
   display: flex;
   max-width: 150px;
 }
-
-
 
 .nav__menu__btn {
   font-size: 1.5rem;
@@ -145,7 +143,8 @@ nav {
 
 .hero-intro {
   margin-bottom: 20px;
-}.hero-intro h1,
+}
+.hero-intro h1,
 .hero-intro p {
   animation: slideInFromLeft 1s ease-out forwards;
   animation-delay: 0.4s;
@@ -187,7 +186,6 @@ nav {
   gap: 20px;
 }
 
-
 .form-input {
   width: 100%;
   padding: 10px;
@@ -195,7 +193,6 @@ nav {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-
 
 .submit-button {
   background-color: #683868;
@@ -222,8 +219,8 @@ nav {
   opacity: 0;
   animation: slideInFromLeft 1s ease-out forwards;
   animation-delay: 2s;
-  ;}
-.container{
+}
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -247,16 +244,12 @@ nav {
   align-items: center;
 }
 
-
-
- .french-description {
+.french-description {
   margin-bottom: 20px;
 }
- .french-description p {
-  
+.french-description p {
   font-size: 18px;
   color: #000000;
-  
 }
 
 .program-image {
@@ -270,14 +263,13 @@ nav {
 }
 .program-image2 {
   display: none;
-  height: 340PX;
+  height: 340px;
   object-fit: cover;
   border-radius: 10px;
   opacity: 0;
   animation: slideFromRight 1s ease-out forwards;
   animation-delay: 2s; /* Adjust the delay as needed */
 }
-
 
 .why-choose-us {
   background-color: #f7f7f7;
@@ -312,7 +304,7 @@ nav {
 }
 
 .section-title.fr {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 
   font-size: 35px;
   font-weight: bold;
@@ -355,11 +347,11 @@ i {
   font-size: 24px;
   margin-bottom: 10px;
 }
-.container3{
+.container3 {
   display: flex;
   flex-direction: column;
 }
-.testimonial-container{
+.testimonial-container {
   display: flex;
 }
 .testimonials {
@@ -367,8 +359,8 @@ i {
   padding: 20px;
   text-align: center;
   display: flex;
-    flex-direction: column;
-    gap: 20px;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .testimonials .section-title {
@@ -418,7 +410,6 @@ i {
   direction: rtl;
 }
 
-
 .testimonial {
   transform: scale(0.5);
   opacity: 0;
@@ -453,7 +444,7 @@ i {
   flex-direction: column;
   align-items: center;
 }
-.benefits h2{
+.benefits h2 {
   text-align: center;
   font-size: 22px;
   margin-bottom: 35px;
@@ -469,7 +460,6 @@ i {
   animation-delay: 5s;
   font-size: 16px;
 }
-
 
 .benefit-text h3 {
   font-weight: bold;
@@ -495,7 +485,6 @@ i {
   padding: 1rem;
   border-bottom: 1px solid #ddd;
   cursor: pointer;
-  
 }
 
 .faq-question h4 {
@@ -530,7 +519,7 @@ i {
   padding: 0.5rem;
 }
 .faq-question {
-  opacity: 0; 
+  opacity: 0;
   animation-duration: 0.8s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
@@ -574,7 +563,7 @@ i {
     display: none;
   }
   .banner-image2 {
-display: flex;
+    display: flex;
   }
   .beauty-treatment-hero {
     flex-direction: row;
@@ -584,7 +573,6 @@ display: flex;
   .hero-intro {
     margin-bottom: 40px;
     width: 450px;
-
   }
   .registration-form-container {
     padding: 40px;
@@ -595,9 +583,8 @@ display: flex;
   }
   .form-input {
     margin-right: 10px;
-  
   }
-  .formlayout{
+  .formlayout {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -606,11 +593,10 @@ display: flex;
   .program-presentation {
     padding: 60px;
   }
-  .french-description p{
-    width: 500Px;
-
+  .french-description p {
+    width: 500px;
   }
-  .container{
+  .container {
     flex-direction: row;
     gap: 50px;
     align-items: normal;
@@ -635,9 +621,8 @@ display: flex;
   }
   .program-image2 {
     display: flex;
-
   }
-  .why-choose-us{
+  .why-choose-us {
     background-position: center;
   }
   .reasons {
@@ -646,14 +631,13 @@ display: flex;
   .reason {
     width: 30%;
   }
-  .container3{
-   gap: 20px;
-
+  .container3 {
+    gap: 20px;
   }
   .testimonials {
     padding: 60px;
   }
-  .testimonial-container{
+  .testimonial-container {
     display: flex;
   }
   .testimonials-slider {
@@ -667,7 +651,7 @@ display: flex;
   .testimonial-video {
     height: 400px;
     margin-bottom: 20px;
-   background-color: #212429;
+    background-color: #212429;
   }
 
   .testimonial {
@@ -705,51 +689,15 @@ display: flex;
   .faq-question {
     margin-bottom: 2rem;
   }
-
 }
 @media (max-width: 768px) {
-  .diagonal-section{
+  .diagonal-section {
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-
   }
-  .program-image{
+  .program-image {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
-
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .footer {
   background-color: #beacc2;
@@ -801,36 +749,7 @@ display: flex;
   color: var(--primary-color);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (width > 768px) {
-  
   nav {
     position: static;
     padding: 2rem 1rem;
@@ -845,7 +764,7 @@ display: flex;
     padding: 0;
     background-color: transparent;
   }
-  .nav__logo img{
+  .nav__logo img {
     max-width: 245px;
   }
   .nav__logo span {
@@ -869,18 +788,16 @@ display: flex;
   .nav__links a:hover {
     color: var(--primary-color);
   }
-
 }
-
 
 @keyframes zoomIn {
   from {
-      transform: scale(0.5);
-      opacity: 0;
+    transform: scale(0.5);
+    opacity: 0;
   }
   to {
-      transform: scale(1);
-      opacity: 1;
+    transform: scale(1);
+    opacity: 1;
   }
 }
 @keyframes fadeIn {
@@ -935,29 +852,29 @@ display: flex;
 }
 @keyframes slideInRight {
   from {
-      transform: translateX(100%);
-      opacity: 0;
+    transform: translateX(100%);
+    opacity: 0;
   }
   to {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
 @keyframes slideInLeft {
   from {
-      transform: translateX(-100%);
-      opacity: 0;
+    transform: translateX(-100%);
+    opacity: 0;
   }
   to {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 #videoContainer {
   position: relative;
   max-width: 900px;
-  padding-top : 5vh;
+  padding-top: 5vh;
   margin-bottom: 5vh;
   display: flex;
   justify-self: center;
@@ -1007,7 +924,7 @@ display: flex;
   margin-right: 8px; /* Espace entre l'icône et le texte */
 }
 
-@media (  width < 768px) {
+@media (width < 768px) {
   #videoContainer {
     padding-top: 15vh;
   }
